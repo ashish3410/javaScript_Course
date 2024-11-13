@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BackGround Color Changer</title>
+</head>
+<body>
+<h1>Background Color Changer</h1>
+<button id="start">Start</button>
+<button id="stop">Stop</button>
+</body>
+<script>
+    const start=document.getElementById("start")
+    const stop=document.getElementById("stop")
+    const body=document.querySelector("body")
+    let change;
+    let random
+    function math(){
+        return Math.floor(Math.random()*100+1)
+    }
+    start.addEventListener("click",function(){
+        change=setInterval(function(){
+            body.style.backgroundColor=`rgb(${math()} ${math()} ${math()})`
+        },1000)
+    },false)
+    stop.addEventListener("click",function(){
+        clearInterval(change)
+    },false)
+
+</script>
+</html>

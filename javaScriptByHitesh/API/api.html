@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Request</title>
+    <style>
+     /*   body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:#c9d7f8;
+            color:#e7e6e0;
+            height:100vh;
+        }
+        .box{
+            border-radius:10px;
+            margin: 40px;
+            padding:20px;
+            text-align: center;
+            width:400px;
+            background-color:#6dc3c3;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        label{
+            color: aliceblue;
+            font-size:20px;
+            font-weight: bold;
+        }
+        input.input{
+            display: flex;
+            font-size:18px;
+            width:calc(100% - 20px);
+            padding:.5rem;
+            margin-top:4px;
+            border-radius:4px;
+            border:1px solid #ccc;
+        }
+        .btns{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            flex-wrap: wrap;
+            gap:6px;
+           
+        } 
+        h2{
+            border-radius:4px;
+            margin-bottom:20px;
+            width:calc(100%-20px);
+            background-color: #9ee1dc;
+            color: aliceblue;
+
+        }
+        .btn{
+            border-radius:5px;
+            padding:10px;
+            background-color:rgb(144, 228, 249);
+            width:calc(100%-20px);
+            
+        }
+
+        .btn:hover{
+            background-color:#6dcae2;
+            
+        }*/
+         /* Global Styles */
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #cfcaca;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+}
+
+
+label.country {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+    color: #333;
+}
+
+input.input {
+    padding: 8px;
+    width: calc(100% - 20px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+
+h2.info {
+    font-size: 18px;
+    color: #666;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button.btn {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.btn:hover {
+    background-color: #0056b3;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+    <label class="country" for="input">Country Name:
+        <input class="input" type="text"></label>
+    <div class="btns">
+    <h2 class="info" style="height:100px; margin-top:2rem;"></h2>
+    <button class="btn" id="btn1">Get Location</button>
+    <button class="btn" id="btn2">Get Temperature</button>
+    <button class="btn" id="btn3">Get Time</button>
+    <button class="btn" id="btn4">Get Pressure</button>
+    <button class="btn" id="btn5">Get Humidity</button>
+</div>
+</div>
+</body>
+<script src="app.js">
+
+</script>
+</html>

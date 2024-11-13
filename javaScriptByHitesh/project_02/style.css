@@ -1,0 +1,49 @@
+body{
+    background-color:black;
+    color: white;
+    margin: 2.5rem;
+}
+.box,h1,.inputValue{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.mode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modeButton{
+    padding:.5rem;
+    border-radius:1rem;
+}
+#height,#weight{
+    margin:1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+margin: 1rem auto;
+padding:.5rem;
+border-radius:1rem;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.guide ,h2{
+display: flex;
+justify-content: center;
+align-items:center;
+}
+h2{
+margin-top:4rem;
+}
+ul li{
+margin:.8rem;
+}
+#result{
+font-size: 20px;
+margin:1rem 4rem;
+color:rgb(221, 235, 191);
+}

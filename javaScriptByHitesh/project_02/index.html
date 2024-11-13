@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BMI Calculator</title>
+    <style>
+        body{
+            background-color:black;
+            color: white;
+            margin: 2.5rem;
+        }
+        .box,h1,.inputValue{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+        }
+        .mode{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .modeButton{
+            padding:.5rem;
+            border-radius:1rem;
+        }
+        #height,#weight{
+            margin:1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+        margin: 1rem auto;
+        padding:.5rem;
+        border-radius:1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .guide ,h2{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    h2{
+        margin-top:4rem;
+    }
+    ul li{
+        margin:.8rem;
+    }
+    #result{
+        font-size: 20px;
+        margin:1rem 4rem;
+        color:rgb(221, 235, 191);
+    }
+    </style>
+</head>
+<body>
+    <div class="mode"><button class="modeButton">Change Mode</button></div>
+    <div>
+            <h1>BMI Calculator</h1>
+            <label class="box">Weight in KG :<input id="weight" type="text" ></label>
+            <label class="box">Height in CM :<input id="height" type="text" ></label>
+            <button class="box" id="button">Calculate</button>
+            <div class="box" id="result"></div>
+    </div>
+            <h2>BMI Giude</h2>
+        <div>
+            <ul>
+                <li class="guide" >Normal weight : BMI of 18.5 to 24.9</li>
+                <li class="guide">Overweight : BMI of 25 to 29.9</li>
+                <li class="guide">Obese : BMI of 30 or higher</li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+<Script src="script.js"></Script>
+</html>

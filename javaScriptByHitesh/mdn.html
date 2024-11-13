@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Events: Task 3</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      button {
+        display: block;
+        margin: 20px 0 20px 20px;
+      }
+
+      .button-bar {
+        padding: 20px 0;
+      }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+
+    <section class="preview">
+    </section>
+
+    <div class="button-bar">
+      <button id="red">Red</button>
+      <button id="yellow">Yellow</button>
+      <button id="green">Green</button>
+      <button id="purple">Purple</button>
+    </div>
+
+  <script>
+
+  const buttonBar = document.querySelector('.button-bar');
+  let button=document.querySelector("button")
+
+  // Add your code here
+  buttonBar.addEventListener("click",(e)=>{
+    console.log(e.target)
+    console.log(e.target.id)
+    if(e.target.id==="red"){
+        e.target.style.backgroundColor="red"
+    }else if(e.target.id==="yellow"){
+        e.target.style.backgroundColor="yellow"
+    }else if(e.target.id==="green"){
+        e.target.style.backgroundColor="green"
+    }else if(e.target.id==="purple"){
+        e.target.style.backgroundColor="purple"
+    }
+  })
+
+  </script>
+  </body>
+</html>
